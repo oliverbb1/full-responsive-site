@@ -1,0 +1,22 @@
+.banner {
+   height: 936px;
+   background-image:  url('./assets/banner.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 0 277px 0 277px;
+
+   @include cetvrti {
+      padding: 0 157px 0 157px;
+   }
+   // @include peti {
+   //    width: 100%;
+   // }
+}
+.banner-text {
+   margin-top: 149px;
+   font-size: 96px;
+   width:806px ;
+   line-height: 131px;
+   color: $purple;
+   height: 393px;
+}

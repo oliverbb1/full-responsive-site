@@ -1,0 +1,54 @@
+.button {
+   // width: 218px;
+   height: 48px;
+   border-radius: 24px;
+   background-color: $purple;
+   padding: 10px 48px 14px;
+   border: none;
+   font-size: 16px;
+   line-height: 22px;
+   text-align: center;
+   align-items: center;
+   color: $pure-white;
+   display: block;
+   overflow-y: hidden;
+}
+.button-1 {
+   width: 218px;
+   margin-top: 29px;
+   position: absolute;
+   right: 277px;
+   @include prvi {
+      right: 200px;
+   }
+   @include drugi {
+      right: 150px;
+   }
+   @include cetvrti {
+      right: 10px;
+      margin-top: 18px;
+   }
+   @include peti {
+      display: none;
+   }
+}
+.button-2 {
+   width: 267px;
+   margin-top: 35px;
+}
+@include peti {
+   .burger {
+      // display: block;
+      position: absolute;
+      right: 20px;
+      top: 26px;
+      cursor: pointer;
+   }
+   .burger div {
+      width: 30px;
+      height: 4px;
+      background-color: $charcoal;
+      margin: 6px;
+      transition: all 0.3s ease;
+   }
+}

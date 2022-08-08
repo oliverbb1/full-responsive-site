@@ -1,0 +1,22 @@
+@mixin prvi {
+   @media (min-width: 1453px) and (max-width: 1680px) {
+     @content;
+   }
+ }
+
+ @mixin  drugi {
+   @media (min-width:1258px) and (max-width: 1452px){
+      @content;
+   }
+ }
+ @mixin cetvrti {
+   @media (min-width:1090px) and (max-width:1257px) {
+      @content;
+ }
+}
+
+@mixin peti {
+   @media (max-width: 1090px) {
+      @content;
+   }
+}

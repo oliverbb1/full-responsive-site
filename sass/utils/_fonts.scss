@@ -1,0 +1,52 @@
+$font-weights: (400, 700, 900);
+
+@each $fw in $font-weights {
+   .f-w-#{$fw} {
+      font-weight: $fw;
+   }
+}
+
+.f-f-sans {
+   font-family: 'public sans';
+}
+.f-f-open {
+   font-family: 'open sans';
+
+}
+
+$font-sizes: (
+   14,
+   16,
+   18,
+   96,
+   36,
+   24,
+   26,
+   110,
+   40,
+   42,
+   62,
+   34,
+   22,
+   20
+);
+
+@each $fs in $font-sizes {
+   .f-s-#{$fs} {
+      font-size: $fs + px;
+   }
+}
+
+
+
+//    $fs: $font-size/10;
+
+//    .fs-#{$font-size} {
+//       font-size: $fs + rem;
+//       @if $font-size == 16 {
+//          @include sm {
+//             font-size: 16px;
+//          }
+//       }
+//    }
+// }

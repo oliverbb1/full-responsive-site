@@ -22,7 +22,22 @@ const navSlide = () => {
   });
 };
 
-// const app = () => {
-//   navSlide();
-// };
+// fetch data from json
+
+fetch("./data.json")
+  .then((response) => response.json())
+  .then(function (data) {
+    for (var i = 0; i < data.length; i++);
+    for (j = 0; j < 4; j++) {
+      document.getElementById("data").innerHTML += `<div class="data">
+          <img class="slider-img" src="${data.image}" alt="">
+          <div class="date-and-btn">
+          <button class="slider-btn">${data.button}</button>
+          <button class="slider-date">${data.date}</button>
+          </div>
+        <p class="slider-description">${data.description}</p>
+      </div>
+    `;
+    }
+  });
 navSlide();

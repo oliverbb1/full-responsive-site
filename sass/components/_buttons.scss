@@ -1,5 +1,4 @@
 .button {
-   // width: 218px;
    height: 48px;
    border-radius: 24px;
    background-color: $purple;
@@ -18,23 +17,28 @@
    margin-top: 29px;
    position: absolute;
    right: 277px;
-   @include prvi {
-      right: 200px;
-   }
-   @include drugi {
-      right: 150px;
-   }
-   @include cetvrti {
-      right: 10px;
-      margin-top: 18px;
-   }
-   @include peti {
-      display: none;
-   }
+   // @include prvi {
+   //    right: 200px;
+   // }
+   // @include drugi {
+   //    right: 150px;
+   // }
+   // @include cetvrti {
+   //    right: 10px;
+   //    margin-top: 18px;
+   // }
+   // @include peti {
+   //    display: none;
+   // }
 }
 .button-2 {
+   height: 47px;
    width: 267px;
    margin-top: 35px;
+   // @include tablet {
+   //  margin-top: 35px;
+
+   // }
 }
 @include peti {
    .burger {

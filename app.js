@@ -5,8 +5,8 @@ const navSlide = () => {
 
   burger.addEventListener("click", () => {
     console.log("oliver");
-    console.log("oliver");
-    console.log("oliver");
+    // console.log("oliver");
+    // console.log("oliver");
     nav.classList.toggle("nav-active");
     navLinks.forEach((link, index) => {
       if (link.style.animation) {

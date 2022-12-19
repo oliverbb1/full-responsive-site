@@ -1,0 +1,18 @@
+.careers {
+    height: 835px;
+    background-image: url('./assets/careers-background.png');
+    .careers-container {
+        margin: 266px 0 0 20.46vw;
+        .careers-p {
+            font-size: 42px;
+            line-height: 49px;            
+            color: $pure-white;
+            max-width: 790px;
+            margin-bottom: 35px;
+            overflow-y: hidden;
+        }
+        :last-child { 
+            width: 276px;
+        }
+    }
+}

@@ -1,58 +1,42 @@
-.button {
+.button-purple {
    height: 48px;
    border-radius: 24px;
    background-color: $purple;
    padding: 10px 48px 14px;
-   border: none;
-   font-size: 16px;
+   border: none;      
    line-height: 22px;
    text-align: center;
    align-items: center;
    color: $pure-white;
    display: block;
    overflow-y: hidden;
+   cursor: pointer;
 }
-.button-1 {
+.button-grey {
+   padding: 5px 15px;
+   height: 32px;
+   background: $green-gray;
+   border-radius: 5px;
+   line-height: 22px;   
+   text-align: center;
+   color: $pure-white;
+   cursor: pointer;
+   border: none;
+}
+.nav-button {
    width: 218px;
    margin-top: 29px;
-   position: absolute;
-   right: 277px;
-   // @include prvi {
-   //    right: 200px;
-   // }
-   // @include drugi {
-   //    right: 150px;
-   // }
-   // @include cetvrti {
-   //    right: 10px;
-   //    margin-top: 18px;
-   // }
-   // @include peti {
-   //    display: none;
-   // }
+   margin-left: auto;
 }
-.button-2 {
-   height: 47px;
+.banner-button {
    width: 267px;
    margin-top: 35px;
-   // @include tablet {
-   //  margin-top: 35px;
-
-   // }
 }
-@include peti {
-   .burger {
-      // display: block;
-      position: absolute;
-      right: 20px;
-      top: 26px;
-      cursor: pointer;
-   }
-   .burger div {
-      width: 30px;
-      height: 4px;
-      background-color: $charcoal;
-      margin: 6px;
-      transition: all 0.3s ease;
-   }
+.investor-button {
+   margin: 0 auto;
+   width: 227px;
+}
+.careers-btn {
+   width: 92px;
+   margin-bottom: 23px;
 }

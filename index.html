@@ -4,16 +4,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Company site</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <section class="d-flex">
-      <p class="p-header f-w-400 f-s-14">122.54 GBp -0.06</p>
+   <section class="d-flex d-f align-center m-l">
+      <p class="p-header f-w-400 f-s-14 text-right m-l">122.54 GBp -0.06</p>
    </section>
    <nav>
       <img class="logo" src="./assets/logo.png" alt="">
-      <ul class="nav-links">
+      <img class="small-logo" src="./assets/logo.png" alt="">
+      <ul class="nav-links d-f" id="toggle">
          <li><a href="#">About us</a></li>
          <li><a href="#">Our brands </a></li>
          <li><a href="#">Investors</a></li>
@@ -22,20 +23,201 @@
          <li><a href="#">News & Media</a></li>
          <li><a href="#">Contacts</a></li>
       </ul>
-      <button class="button button-1">My company</button>
-      <div class="burger">
-         <div class="line1"></div>
-         <div class="line2"></div>
-         <div class="line3"></div>
+      <button class="button-purple nav-button">My company</button>
+      <div class="nav-box1">
+         <p id="nav-box1-text1">122.54 GBp</p>
+         <p id="nav-box1-text2">-0.06</p>
+         <div class="vl"></div> 
+         <div class="hamburger" id="hamburger" aria-label="Collapse or expand the menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </div>
       </div>
    </nav>
-   <section class="banner">
-      <p class="banner-text">Lacus luctus accumsan tortor posuere ac</p>
-      <button class="button button-2">Explore more about us</button>
+   <section class="banner container">
+      <p class="banner-text f-c-purple">Lacus luctus accumsan tortor posuere ac</p>
+      <button class="banner-button button-purple">Explore more about us</button>
    </section>
-   <section class="slider">
-      <div id="data"></div>
-   </section>
-   <script src="app.js"></script>
+   <section class="section-slider">
+   <main class="flex">
+      <div class="left">
+         <p>News, insights and more</p> 
+         <span class="news-hr"></span>
+         <button id="prev-btn" class="slider-bttn"></button> 
+         <button id="next-btn" class="slider-bttn"></button> 
+      </div>
+      <div class="slider"> 
+         <div id="data"></div>
+      </div>
+   </main>
+   <div class="flex-bottom">
+      <button class="button-purple news-button">All news & insights</button>
+      <span class="button-hr"></span>
+   </div>
+</section>
+<section class="container key-facts">
+   <h1 class="center text-center">Our company at a glance</h1>
+   <p class="key-facts-p center text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   <div class="flex-cont d-f">
+      <div class="keyfacts-box">
+         <p>10.3</p>
+         <span class="under f-w-700">(£bn) Revenue</span>
+      </div>
+      <div class="keyfacts-box">
+         <p>+2%</p>
+         <span id="smaller"class="under f-w-700 ">Group total revenue increase*</span>
+      </div>
+      <div class="keyfacts-box">
+         <p>262 </p>
+         <span class="under f-w-700 ">(£m) EBIT</span>
+      </div>
+      <div class="block-cont">
+         <p><span>8</span> Countries</p>
+         <p><span>10</span> Brands</p>
+         <p><span>829</span> Stores</p>
+      </div>
+   </div>
+   <div>
+      <button class="investor-button button-purple">Investor relations</button>
+   </div>
+</section>
+<section class="container sustainability text-right">
+   <button class="sus-button button-grey f-w-700">Sustainability</button>
+   <p class="sus-p m-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  et dolore magna aliqua.</p>
+   <button class="aproach-button button-purple">Our approach</button>
+   <hr class="sus-hr">
+   <div class="sustainability-columns" id="sustain-col">
+      <div class="sustainability-col">
+         <p class="sustainability-col-1">£1m</p>
+         <p class="sustainability-col-2">Tempora aliquam, inventore deserunt</p>
+      </div>
+      <div class="sustainability-col">
+         <p class="sustainability-col-1">£1m</p>
+         <p class="sustainability-col-2">Maxime aliquam deserunt quia, corporis maiores facere sequi</p>
+      </div>
+      <div class="sustainability-col">
+         <p class="sustainability-col-1">100k+</p>
+         <p class="sustainability-col-2">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div class="sustainability-col">
+         <p class="sustainability-col-1">1.9m+</p>
+         <p class="sustainability-col-2">Pariatur corrupti fugiat maiores minus</p>
+      </div>
+      <div class="sustainability-col">
+         <p class="sustainability-col-1">2040</p>
+         <p class="sustainability-col-2">Dicta impedit similique officiis, reiciendis vitae</p>
+      </div>
+   </div>
+   <hr class="sus-hr-bottom">
+   <div class="sustain-btns">
+      <button id="sustain-col-btn-back" class="sustain-col-btn"><</button>
+      <button id="sustain-col-btn-forward" class="sustain-col-btn">></button>
+   </div>
+</section>
+
+<section id="posts">
+   <div class="posts-wrap">
+      <div class="post" id="post-1"> 
+         <div class="post-img-container">
+               <img  class="cover" src="assets/card.png" alt="office">
+         </div>
+         <div class="post-down-wrap">
+         <h2>Our strategy</h2>
+         <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Illum fugit ducimus vel sed. Laudantium, nisi.
+         </p>
+            <div class="posts-link-wrap">
+               <div class="posts-line"></div>
+               <a href="#" class="posts-link">Explore our strategy</a>
+            </div>
+      </div>
+      <div class="shadow-posts"></div>
+      </div>
+      <div class="post" id="post-2">
+         <div class="post-img-container">
+            <img  class="cover" src="assets/card.png" alt="office">
+         </div>
+         <div class="post-down-wrap">
+            <h2>Our strategy</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Illum fugit ducimus vel sed. Laudantium, nisi.</p>
+            <div class="posts-link-wrap">
+               <div class="posts-line"></div>
+               <a href="#" class="posts-link">Explore our strategy</a>
+            </div>
+      </div>
+      <div class="shadow-posts"></div>
+      </div>
+   </div>
+</section>
+<section class="careers">
+   <div class="careers-container">
+      <button class="f-w-700 button-grey careers-btn">Careers</button>
+      <p class="careers-p">Lorem ipsum dolor sit amet consectetur adipisicing elit, ex id nobis consequatur esse corporis eum, illum praesentium totam facilis maxime ullam</p>
+      <button class="button-purple">Careers at our company</button>
+   </div>
+</section>
+<footer>
+   <div class="footer-left">
+      <a href="#"><img class="footer-logo d-b" src="./assets//logo.png" alt=""></a>
+      <button class="signup-button button-purple">Sign up for email alerts</button>
+      <button class="call-to-action-button button-purple">Call to action</button>
+   </div>
+   <div class="footer-right-side">
+   <div class="footer-right">
+      <a href="#">About us</a>
+      <a href="#">At a glance</a>
+      <a href="#">Strategy</a>
+      <a href="#">Business model</a>
+      <a href="#">Our market</a>
+      <a href="#">Leadership</a>
+      <a href="#">Governance</a>
+      <a href="#">More</a>
+   </div>
+   <div class="footer-right">
+      <a href="#">Investors</a>
+      <a href="#">Investment case</a>
+      <a id="one-row" href="#">Results, Reports and presentations</a>
+      <a href="#">Annual Report</a>
+      <a href="#">Regulatory News</a>
+      <a id="one-row" href="#">Share price and tools</a>
+      <a href="#">More</a>
+   </div>
+   <div class="footer-right">
+      <a href="#">Sustainability</a>
+      <a href="#">Our approach</a>
+      <a href="#">Customers</a>
+      <a href="#">Colleagues</a>
+      <a href="#">Suppliers</a>
+      <a href="#">Communities</a>
+      <a href="#">Environment</a>
+      <a href="#">More</a>
+   </div>
+   <div class="footer-right">
+      <a href="#">News & Media</a>
+      <a href="#">Press relases</a>
+      <a href="#">Media library</a>
+      <a href="#">Email alerts</a>
+      <a href="#">Stories & insights</a>
+   </div>
+   </div>
+</footer>
+<section class="footer">
+   <div class="footer-container">
+      <div class="footer-p">
+         <p>© My  company 2021</p>
+      </div>
+      <div class="footer-items">
+         <a href="#">Cookie settings</a>
+         <a href="#">Privacy</a>
+         <a href="#">Terms Of Use </a>
+         <a href="#">Modern Slavery Statement </a>
+         <a href="#">Site Map</a>
+      </div>
+   </div>
+</section>
+<script src="app.js"></script>
 </body>
 </html>

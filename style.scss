@@ -2,13 +2,36 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   overflow-x: hidden;
+   font-family: 'Public Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
 }
-// section {
-//    // padding: 0 277px 0 277px;
-// }
+a{
+   text-decoration: none;
+}
+
+.container {
+   padding: 0 14.427vw;
+}
+.tablet-container {
+   padding-left: 24px;
+}
+.center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.block-container {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 54px;
+}
 
 @import './sass/utils/fonts';
-@import './sass/abstract/mixins';
 @import './sass/abstract/variables';
 @import './sass/components/buttons';
 @import './sass/components/footer';
@@ -16,3 +39,8 @@
 @import './sass/pages/home';
 @import './sass/abstract/keyframes';
 @import './sass/components/slider';
+@import './sass/pages/keyfacts';
+@import './sass/pages/sustainability';
+@import './sass/pages/posts';
+@import './sass/pages/careers';
+@import './sass/abstract/media_queries';

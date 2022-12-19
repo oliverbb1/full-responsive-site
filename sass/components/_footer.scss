@@ -1,0 +1,90 @@
+footer {
+    display: flex;
+    height: 380px;
+    padding: 69px 0px 72px 14.479vw;
+    .footer-left {
+        .footer-logo {
+            margin-bottom: 101px;
+            margin-left: 14px;
+            width: 90px;
+            height: 90px;
+        }
+        .signup-button {
+            width: 268px;
+            margin-right: 62px;
+        }
+        .call-to-action-button {
+            display: none;
+        }
+    }
+    .footer-right-side {
+        display: flex;
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            #one-row {
+                line-height: 18px;
+                padding-top: 5px;
+                :nth-child(2) {
+                    padding-bottom: 5px;
+                }
+            }
+            a{
+                width: 11.198vw;            ;
+                line-height: 29px;
+                color: $charcoal;
+                overflow-y: hidden;
+            }
+            :first-child {
+                width: 11.198vw;            ;
+                height: 29px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 27px;
+                color: $purple;    
+                margin-bottom: 21px;   
+            }
+        }
+    }
+}
+.footer {
+    height: 59px;
+    display: flex;
+    padding: 0 14.948vw;
+    padding-top: 19px;
+    background: $lighest-grey;
+    border-top: 1px solid $second-gray;
+    .footer-container {
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1341px;
+        .footer-p {
+            p {
+                margin-left: 5px;
+                line-height: 19px;            
+                color: $green-gray;
+                width: 153px;
+            }
+        }
+        .footer-items {
+            height: 25px;
+            max-width: 934px;
+            text-align: right;
+            a {
+                font-size: 14px;
+                color: $green-gray; 
+                padding: 0 21px 0 21px;
+                border-left:  1px solid $green-gray;
+            }
+            a:last-child {
+                padding-right: 0px;
+            }
+            a:first-child {
+                border-left: none ;
+            }
+        }
+    }
+}

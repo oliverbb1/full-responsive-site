@@ -1,150 +1,99 @@
 .d-flex {
    background-color: $lighest-grey;
    height: 39px;
-   display: flex;
-   justify-content: right;
-   align-items: center;
-   width: 100%;
-   // @include peti {
-   //    display: none;
-   // }
 }
 
 .p-header {
-   position: absolute;
-   right: 277px;
-   // right: 0;
-   // @include prvi {
-   //    right: 200px;
-   // }
-   // @include drugi {
-   //    right: 150px;
-   // }
-   // @include cetvrti {
-   //    right: 10px;
-   // }
+   line-height: 19px;   
+   margin-right: 14.427vw;
+   width: 112px;
 }
-
 
 nav {
-   display: flex;
    height: 105px;
-   padding: 0 277px 0 277px;
-   // @include prvi {
-   //    padding: 0 200px 0 200px;
-   // }
-   // @include drugi {
-   //    padding: 0 150px 0 150px;
-   // }
-   // @include cetvrti {
-   //    height: 85px;
-   //    padding: 0 10px 0 10px;
-   // }
-   // @include peti {
-   //    height: 85px;
-   //    padding: 0;
-   // }
-
+   width: 1366px;
+   margin: 0 auto;
+   display: flex;
+}
+.small-logo {
+   display: inline-block;
+   width: 53px;
+   height: 53px;
+   display: none;
 }
 .logo {
-   margin-top: 17px;
+   margin-top: 18px;
    width: 71px;
    height: 70px;
-   // @include cetvrti {
-   //    width: 53px;
-   //    height: 53px;
-   // }
-   // @include peti {
-   //    width: 53px;
-   //    height: 53px;
-   //    margin: 16px 0 16px 25px;
-      
-   // }
 }
 
 .nav-links {
-   display: flex;
    width: 872px;
    margin-top: 34px;
-   // @include cetvrti {
-   //    margin-top: 27px;
-   // }
-   // @include peti {
-   //    position: absolute;
-   //    left: 0px;
-   //    width: 0%;
-   //    height: 478px;
-   //    top: 50px;
-   //    background-color: $pure-white;
-   //    display: flex;
-   //    flex-direction: column;
-   //    align-items: left;
-   // }
-   li {
-      // opacity: ;
-      list-style: none;
-      &:first-child{
-         margin-left: 45px;
-      }
-      // @include prvi {
-      //    &:first-child{
-      //       margin-left: 35px;
-      //    }
-      // }
-      // @include drugi {
-      //    &:first-child{
-      //       margin-left: 25px;
-      //    }
-      // }
-      // @include cetvrti {
-      //    &:first-child{
-      //       margin-left: 10px;
-      //    }
-      // }
-      // @include peti {
-      //    &:first-child{
-      //       margin-left: 0px;
-      //       margin-top: 26px;
-      //    }
-      //     overflow-x: hidden;
-      // overflow-y: hidden;
-      //    opacity: 0;
-      //    margin-bottom: 40px;
-      // }
-
+li {
+   list-style: none;
+   &:first-child{
+      margin-left: 45px;
    }
-   a {
-      line-height: 25px;
-      color: $charcoal;
-      font-size: 18px;
-      text-decoration: none;
-      margin-right: 40px;
-      font-weight: 400;
-      // @include prvi {
-      //    margin-right: 30px;
-      // }
-      // @include drugi {
-      //    margin-right: 20px;
-      //    font-size: 17px;
-      // }
-      }
+}
+a {
+   line-height: 25px;
+   height: 25px;
+   color: $charcoal;
+   font-size: 18px;
+   text-decoration: none;
+   margin-right: 40px;
+   font-weight: 400;
    }
-   .nav-active{
-      display: block;
-      width: 100%;
-      padding-left: 25px;
-   }
+}
+.nav-box1 {
+   display: none;
+}
 
-   .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px);
-   }
+// .d-flex {
+//    background-color: $lighest-grey;
+//    height: 39px;
+//    .p-header {
+//       line-height: 19px;   
+//       margin-right: 14.427vw;
+//       width: 112px;
+//    }
+// }
 
-   .toggle .line2 {
-      opacity: 0;
-   }
-
-
-   .toggle .line3 {
-      transform: rotate(45deg) translate(-7px, -9px);
-   }
-
+// nav {
+//    height: 105px;
+//    width: 1366px;
+//    margin: 0 auto;
+//    display: flex;
+//    .small-logo {
+//       display: inline-block;
+//       width: 53px;
+//       height: 53px;
+//       display: none;
+//    }
+//    .logo {
+//       margin-top: 18px;
+//       width: 71px;
+//       height: 70px;
+//       margin-right: 45px;
+//    }
+//    .nav-links {
+//       width: 872px;
+//       margin-top: 34px;
+//          li {
+//             list-style: none;
+//          }
+//          a {
+//             line-height: 25px;
+//             height: 25px;
+//             color: $charcoal;
+//             font-size: 18px;
+//             text-decoration: none;
+//             margin-right: 40px;
+//             font-weight: 400;
+//          }
+//    }
+//    .nav-box1 {
+//       display: none;
+//    }
+// }

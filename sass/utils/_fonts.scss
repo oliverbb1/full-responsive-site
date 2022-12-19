@@ -36,17 +36,3 @@ $font-sizes: (
       font-size: $fs + px;
    }
 }
-
-
-
-//    $fs: $font-size/10;
-
-//    .fs-#{$font-size} {
-//       font-size: $fs + rem;
-//       @if $font-size == 16 {
-//          @include sm {
-//             font-size: 16px;
-//          }
-//       }
-//    }
-// }

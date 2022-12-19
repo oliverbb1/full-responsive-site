@@ -1,0 +1,83 @@
+.sustainability {
+  overflow-y: hidden;
+    height: 835px;
+    background-image: url('./assets/sus-background.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    .sus-button {
+      margin: 165px 0 15px 0;
+      width: 140px;
+    }
+    .sus-p {
+      text-align: right;
+      color: $pure-white;
+      font-size: 42px;
+      line-height: 49px;
+      max-width: 756px;
+      min-height: 164px;
+    }
+    .aproach-button {
+      margin: 38px 0 37px auto;
+      width: 201px;
+    }
+    .sus-hr {
+      margin-bottom: 42px;
+    }
+    .sustainability-columns {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row-reverse wrap;
+      color: $pure-white;
+      text-align: right;
+      .sustainability-col {
+        margin-left: 15px; 
+        overflow: hidden;
+        align-items: center;
+        .sustainability-col-1 {
+          font-size: 62px;
+          line-height: 72.85px;
+          margin-top: 0;
+          margin-bottom: 7px;
+          width: 215px;
+          height: 73px;
+        }
+        .sustainability-col-2 {
+          font-size: 20px;
+          line-height: 23.5px;
+          margin: 0;
+          width: 215px;
+      }
+    }
+    .sustainability-columns > * {
+      max-width: 215px;
+    }
+  }
+  .sus-hr-bottom {
+    display: none;
+  }
+  .sustain-btns {
+    display: flex;
+    justify-content: flex-start;
+    .sustain-col-btn {
+      display: none;
+      background: $background-button;
+      color: $purple;
+      border: 1px solid $pure-white;
+      width: 64px;
+      height: 32px;
+      border-radius: 24px;
+      font-size: 24px;
+      margin-right: 15px;
+      margin-bottom: 4px;
+        :hover {
+          background-color: $pure-white;
+          border: 1px solid $second-gray;
+        }
+        :active {
+          font-weight: 700;
+          transform: translateY(4px);
+          background-color: $second-gray;
+        }
+    }
+  }
+}
